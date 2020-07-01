@@ -12,7 +12,7 @@ namespace EAAutoFramework.Helpers
         //Create a file which can store the log information
         public static void CreateLogFile()
         {
-            string dir = @"C:\Users\Azul\Documents\L_E\.Net\EAEmployeeTest";
+            string dir = @"C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#";
             if(Directory.Exists(dir))
             {
                 _streamw = File.AppendText(dir + _logFileName + ".log");
