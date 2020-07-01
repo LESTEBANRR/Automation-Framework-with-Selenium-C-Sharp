@@ -14,12 +14,8 @@ namespace EAEmployeeTest
     [TestClass]
     public class UnitTest1 : Base
     {
-
-
-        string url = ConfigReader.InitializeTest();
-
-
-        public void OpenBrowser(BrowserType browserType = BrowserType.FireFox)
+                
+        public void OpenBrowser(BrowserType browserType = BrowserType.Chrome)
         {
             switch (browserType)
             {
@@ -44,10 +40,8 @@ namespace EAEmployeeTest
 
         [TestMethod]
         public void TestMethod1()
-        {
-            //DriverContext.Driver = new FirefoxDriver();
-            //DriverContext.Driver.Navigate().GoToUrl(url);
-
+        {            
+            ConfigReader.SetFrameworkSettings();
 
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
 
@@ -58,7 +52,7 @@ namespace EAEmployeeTest
             OpenBrowser(BrowserType.Chrome);
             LogHelpers.Write("Opened the browser !!!");
 
-            DriverContext.Browser.GoToUrl(url);
+            DriverContext.Browser.GoToUrl(Sttings.AUT);
             LogHelpers.Write("Navigated to the page !!!");
 
             //LoginPage
@@ -75,6 +69,8 @@ namespace EAEmployeeTest
         [TestMethod]
         public void TableOperation()
         {
+            ConfigReader.SetFrameworkSettings();
+
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
 
             ExcellHelpers.PopulateInCollection(fileName);
@@ -84,7 +80,7 @@ namespace EAEmployeeTest
             OpenBrowser(BrowserType.FireFox);
             LogHelpers.Write("Opened the browser !!!");
 
-            DriverContext.Browser.GoToUrl(url);
+            DriverContext.Browser.GoToUrl(Sttings.AUT);
             LogHelpers.Write("Navigated to the page !!!");
 
             CurrentPage = GetInstance<LoginPage>();
