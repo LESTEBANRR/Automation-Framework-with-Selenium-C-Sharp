@@ -1,6 +1,8 @@
 ﻿using EAAutoFramework.Base;
+using EAAutoFramework.Extensions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using System;
 
 namespace EAEmployeeTest.Pages
 {
@@ -42,6 +44,9 @@ namespace EAEmployeeTest.Pages
             return GetInstance<EmployeePage>();
         }
 
-
+        internal void CheckIfLoginExist()
+        {
+            txtUserName.AssertElementPresent();
+        }
     }
 }

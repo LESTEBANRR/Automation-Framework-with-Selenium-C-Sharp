@@ -58,6 +58,7 @@ namespace EAEmployeeTest
             //LoginPage
             CurrentPage = GetInstance<LoginPage>();
             CurrentPage.As<LoginPage>().ClickLoginLink();
+            CurrentPage.As<LoginPage>().CheckIfLoginExist();
             CurrentPage.As<LoginPage>().Login(ExcellHelpers.ReadData(1, "UserName"), ExcellHelpers.ReadData(1, "Password"));
             //EmployeePage
             CurrentPage = CurrentPage.As<LoginPage>().ClickEmployeeList();
