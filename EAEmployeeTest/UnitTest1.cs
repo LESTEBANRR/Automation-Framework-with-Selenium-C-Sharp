@@ -14,7 +14,7 @@ namespace EAEmployeeTest
     [TestClass]
     public class UnitTest1 : HookInitialize
     {      
-
+        /*
         [TestMethod]
         public void TestMethod1()
         {            
@@ -49,6 +49,6 @@ namespace EAEmployeeTest
 
 
         }
-
+        */
     }
 }
