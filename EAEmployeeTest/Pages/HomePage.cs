@@ -15,6 +15,11 @@ namespace EAEmployeeTest.Pages
         IWebElement lnkLoggedInUser { get; set; }
         [FindsBy(How = How.LinkText, Using = "Logoff")]
         IWebElement lnkLogoff { get; set; }
+
+        internal void CheckIfLoginExist()
+        {
+            lnkLogin.AssertElementPresent();
+        }
         internal LoginPage ClickLogin()
         {
             lnkLogin.Click();

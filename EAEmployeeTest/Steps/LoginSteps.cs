@@ -1,6 +1,7 @@
 ﻿using EAAutoFramework.Base;
 using EAEmployeeTest.Pages;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
 
 namespace EAEmployeeTest.Steps
 {
@@ -18,31 +19,35 @@ namespace EAEmployeeTest.Steps
         [Given(@"I see application opened")]
         public void GivenISeeApplicationOpened()
         {
-            ScenarioContext.Current.Pending();
+            CurrentPage.As<HomePage>().CheckIfLoginExist();
         }
 
         [Then(@"I click login link")]
         public void ThenIClickLoginLink()
         {
-            ScenarioContext.Current.Pending();
+            CurrentPage = CurrentPage.As<HomePage>().ClickLogin();
         }
 
         [When(@"I enter UserName and Password")]
         public void WhenIEnterUserNameAndPassword(Table table)
         {
-            ScenarioContext.Current.Pending();
+            dynamic data = table.CreateDynamicInstance();
+            CurrentPage.As<LoginPage>().Login(data.UserName,data.Password);
         }
 
         [Then(@"I click kogin button")]
         public void ThenIClickKoginButton()
         {
-            ScenarioContext.Current.Pending();
+            CurrentPage= CurrentPage.As<LoginPage>().ClickLoginButton();
         }
 
         [Then(@"I should see the username with hello")]
         public void ThenIShouldSeeTheUsernameWithHello()
         {
-            ScenarioContext.Current.Pending();
+            if (CurrentPage.As<HomePage>().GetLoggedInUser().Contains("admin"))
+                System.Console.WriteLine("Success Login");
+            else
+                System.Console.WriteLine("Unsuccessful Login");
         }
 
 
