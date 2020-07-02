@@ -2,19 +2,11 @@
 using EAAutoFramework.Extensions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using System;
 
 namespace EAEmployeeTest.Pages
 {
     class LoginPage : BasePage
     {
-        //Objects for the login page
-        [FindsBy(How = How.LinkText, Using = "Login")]
-        IWebElement lnkLogin { get; set; }
-
-        [FindsBy(How = How.LinkText, Using = "Employee List")]
-        IWebElement lnkEmployeeList { get; set; }
-
         [FindsBy(How= How.Id, Using ="UserName")]
         IWebElement txtUserName { get; set; }
 
@@ -29,19 +21,12 @@ namespace EAEmployeeTest.Pages
         {
             txtUserName.SendKeys(userName);
             txtPassword.SendKeys(password);
+        }
+
+        public HomePage ClickLoginButton()
+        {
             btnLogin.Submit();
-        }
-
-
-        public void ClickLoginLink()
-        {
-            lnkLogin.Click();
-        }
-
-        public EmployeePage ClickEmployeeList()
-        {
-            lnkEmployeeList.Click();
-            return GetInstance<EmployeePage>();
+            return GetInstance<HomePage>();
         }
 
         internal void CheckIfLoginExist()

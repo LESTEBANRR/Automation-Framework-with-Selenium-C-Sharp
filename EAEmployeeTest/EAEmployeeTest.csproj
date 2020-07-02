@@ -118,7 +118,8 @@
   <ItemGroup>
     <Compile Include="HookInitialize.cs" />
     <Compile Include="Pages\CreateEmployeePage.cs" />
-    <Compile Include="Pages\EmployeePage.cs" />
+    <Compile Include="Pages\EmployeeListPage.cs" />
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -27,7 +27,7 @@ namespace EAEmployeeTest
             CurrentPage.As<LoginPage>().Login(ExcellHelpers.ReadData(1, "UserName"), ExcellHelpers.ReadData(1, "Password"));
             //EmployeePage
             CurrentPage = CurrentPage.As<LoginPage>().ClickEmployeeList();
-            CurrentPage.As<EmployeePage>().ClickCreateNew();
+            CurrentPage.As<EmployeeListPage>().ClickCreateNew();
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace EAEmployeeTest
             //EmployeePage
             CurrentPage = CurrentPage.As<LoginPage>().ClickEmployeeList();
 
-            var table = CurrentPage.As<EmployeePage>().GetEmployeeList();
+            var table = CurrentPage.As<EmployeeListPage>().GetEmployeeList();
 
             HtmlTableHelper.ReadTable(table);
             HtmlTableHelper.PerformActionOnCell("5", "Name", "Ramesh", "Benefits");

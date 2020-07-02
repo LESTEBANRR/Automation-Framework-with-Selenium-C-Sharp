@@ -11,7 +11,7 @@ Scenario: Check login with correct username and password
 Given I have navigated to the application
 And I see application opened
 Then I click login link
-When I enter UserName and Password and click Login
+When I enter UserName and Password
 | UserName | Password |
 | admin    | password |
 Then I click kogin button
