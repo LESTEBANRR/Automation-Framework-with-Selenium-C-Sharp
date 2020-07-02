@@ -6,7 +6,7 @@ using OpenQA.Selenium.IE;
 
 namespace EAAutoFramework.Base
 {
-    public abstract class TestInitializeHook
+    public abstract class TestInitializeHook : Base
     {
         public readonly BrowserType Browser;
         public TestInitializeHook(BrowserType browser)

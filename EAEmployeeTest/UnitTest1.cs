@@ -12,20 +12,14 @@ using EAAutoFramework.Config;
 namespace EAEmployeeTest
 {
     [TestClass]
-    public class UnitTest1 : Base
-    {
-                
-       
+    public class UnitTest1 : HookInitialize
+    {      
 
         [TestMethod]
         public void TestMethod1()
         {            
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
-
             ExcellHelpers.PopulateInCollection(fileName);
-
-            LogHelpers.Write("Navigated to the page !!!");
-
             //LoginPage
             CurrentPage = GetInstance<LoginPage>();
             CurrentPage.As<LoginPage>().ClickLoginLink();
@@ -34,27 +28,13 @@ namespace EAEmployeeTest
             //EmployeePage
             CurrentPage = CurrentPage.As<LoginPage>().ClickEmployeeList();
             CurrentPage.As<EmployeePage>().ClickCreateNew();
-
-
         }
 
         [TestMethod]
         public void TableOperation()
         {
-            ConfigReader.SetFrameworkSettings();
-
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
-
             ExcellHelpers.PopulateInCollection(fileName);
-
-            LogHelpers.CreateLogFile();
-
-            OpenBrowser(BrowserType.FireFox);
-            LogHelpers.Write("Opened the browser !!!");
-
-            DriverContext.Browser.GoToUrl(Sttings.AUT);
-            LogHelpers.Write("Navigated to the page !!!");
-
             CurrentPage = GetInstance<LoginPage>();
             CurrentPage.As<LoginPage>().ClickLoginLink();
             CurrentPage.As<LoginPage>().Login(ExcellHelpers.ReadData(1, "UserName"), ExcellHelpers.ReadData(1, "Password"));
@@ -69,7 +49,6 @@ namespace EAEmployeeTest
 
 
         }
-
 
     }
 }
