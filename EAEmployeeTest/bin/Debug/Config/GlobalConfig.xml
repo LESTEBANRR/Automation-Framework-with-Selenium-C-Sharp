@@ -15,6 +15,6 @@
 		<UserName>EAutoTeam</UserName>
 		<!--Possible flag Selenium, SpecFlow-->
 		<Technology>Selenium</Technology>
-	    <ApplicationDb>Data Source=http://eaapp.somee.com/ ;Initial Catalog=Employee;Integrated Security=True</ApplicationDb>
+	    <ApplicationDb>Data Source=Server;Initial Catalog=Employee;Integrated Security=True</ApplicationDb>
 	</RunSettings>
 </EAAutoFramework>
