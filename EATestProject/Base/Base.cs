@@ -1,11 +1,23 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using TechTalk.SpecFlow;
 
 namespace EAAutoFramework.Base
 {
     public class Base
     {
-        public BasePage CurrentPage { get; set; }
+        public BasePage CurrentPage
+        {
+
+            get
+            {
+                return (BasePage)ScenarioContext.Current["currentPage"];
+            }
+            set
+            {
+                ScenarioContext.Current["currentPage"] = value;
+            }
+        }
 
         private IWebDriver _driver { get; set; }
 
