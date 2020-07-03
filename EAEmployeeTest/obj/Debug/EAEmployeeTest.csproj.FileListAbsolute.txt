@@ -75,5 +75,8 @@ C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.pdb
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.xml
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\Utf8Json.xml
-C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
-C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.pdb
+C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\nunit.framework.dll
+C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\nunit.framework.pdb
+C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\nunit.framework.xml
+C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb

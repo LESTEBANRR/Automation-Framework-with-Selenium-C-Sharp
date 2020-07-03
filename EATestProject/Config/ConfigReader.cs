@@ -16,7 +16,8 @@ namespace EAAutoFramework.Config
             XPathItem isreport;
             XPathItem logpath;
 
-            string strFileName = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
+            //string strFileName = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
+            string strFileName = AppDomain.CurrentDomain.BaseDirectory.ToString() + "\\Config\\GlobalConfig.xml";
             FileStream stream = new FileStream(strFileName,FileMode.Open);
             XPathDocument document = new XPathDocument(stream);
             XPathNavigator navigator = document.CreateNavigator();
