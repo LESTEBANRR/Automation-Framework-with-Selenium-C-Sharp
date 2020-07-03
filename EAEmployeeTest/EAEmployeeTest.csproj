@@ -146,6 +146,7 @@
     <None Include="Data\Login.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Features\Employee.feature" />
     <None Include="Features\Login.feature" />
     <None Include="packages.config" />
   </ItemGroup>

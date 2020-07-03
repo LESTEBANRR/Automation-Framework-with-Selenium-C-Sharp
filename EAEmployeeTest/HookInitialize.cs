@@ -9,7 +9,7 @@ namespace EAEmployeeTest
         public HookInitialize(): base(BrowserType.Chrome)
         {
             InitializeSettings();
-            NavigateSite();
+            //NavigateSite();
         }
         [BeforeFeature]
         public static void TestStart()

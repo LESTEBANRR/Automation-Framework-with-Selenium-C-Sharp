@@ -14,5 +14,6 @@ Then I click login link
 When I enter UserName and Password
 | UserName | Password |
 | admin    | password |
-Then I click kogin button
+Then I click login button
 Then I should see the username with hello
+
