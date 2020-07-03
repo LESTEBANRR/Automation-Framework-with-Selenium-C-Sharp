@@ -74,6 +74,15 @@ namespace EAEmployeeTest.Features
             testRunner.CollectScenarioErrors();
         }
         
+        public virtual void FeatureBackground()
+        {
+#line 5
+#line hidden
+#line 6
+    testRunner.Given("I delete employee \'AutoUser\' before i start running test", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+        }
+        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Create Employee with all details")]
         [NUnit.Framework.CategoryAttribute("smoke")]
@@ -83,7 +92,7 @@ namespace EAEmployeeTest.Features
                     "smoke"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Employee with all details", null, tagsOfScenario, argumentsOfScenario);
-#line 6
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -103,13 +112,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 5
+this.FeatureBackground();
+#line hidden
+#line 10
 testRunner.Given("I have navigated to the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 11
 testRunner.And("I see application opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
+#line 12
 testRunner.Then("I click login link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -118,16 +130,16 @@ testRunner.Then("I click login link", ((string)(null)), ((TechTalk.SpecFlow.Tabl
                 table1.AddRow(new string[] {
                             "admin",
                             "password"});
-#line 10
+#line 13
 testRunner.When("I enter UserName and Password", ((string)(null)), table1, "When ");
 #line hidden
-#line 13
+#line 16
 testRunner.Then("I click login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 14
+#line 17
 testRunner.And("I click employeeList link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 15
+#line 18
 testRunner.Then("I click createnew button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -142,10 +154,10 @@ testRunner.Then("I click createnew button", ((string)(null)), ((TechTalk.SpecFlo
                             "30",
                             "1",
                             "autouser@ea.com"});
-#line 16
+#line 19
 testRunner.And("I enter following details", ((string)(null)), table2, "And ");
 #line hidden
-#line 19
+#line 22
 testRunner.And("I click create button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

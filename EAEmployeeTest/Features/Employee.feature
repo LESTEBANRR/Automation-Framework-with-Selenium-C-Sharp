@@ -2,6 +2,9 @@
 	Responsible for verifying Benefits, Create Employee,
     Delete employee and check if the functionality works 
 
+Background:     
+    #Given I delete employee 'AutoUser' before i start running test
+
 @smoke
 Scenario: Create Employee with all details
 Given I have navigated to the application

@@ -1,6 +1,9 @@
 ﻿using EAAutoFramework.Base;
+using EAAutoFramework.Config;
 using EAEmployeeTest.Pages;
 using TechTalk.SpecFlow;
+using System.Data.SqlClient;
+using EAAutoFramework.Helpers;
 
 namespace EAEmployeeTest.Steps
 {
@@ -46,6 +49,14 @@ namespace EAEmployeeTest.Steps
             NavigateSite();
             CurrentPage = GetInstance<HomePage>();
         }
+
+        [Given(@"I delete employee '(.*)' before i start running test")]
+        public void GivenIDeleteEmployeeBeforeIStartRunningTest(string employeeName)
+        {
+            string query = "delete from Employees where Name='"+employeeName+"'";
+            Sttings.ApplicationCon.ExecuteQuery(query);
+        }
+
 
     }
 }

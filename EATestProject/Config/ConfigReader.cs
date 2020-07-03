@@ -15,6 +15,7 @@ namespace EAAutoFramework.Config
             XPathItem islog;
             XPathItem isreport;
             XPathItem logpath;
+            XPathItem appConnection;
 
             //string strFileName = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
             string strFileName = AppDomain.CurrentDomain.BaseDirectory.ToString() + "\\Config\\GlobalConfig.xml";
@@ -28,13 +29,15 @@ namespace EAAutoFramework.Config
             islog = navigator.SelectSingleNode("EAAutoFramework/RunSettings/IsLog");
             isreport = navigator.SelectSingleNode("EAAutoFramework/RunSettings/IsReport");
             logpath = navigator.SelectSingleNode("EAAutoFramework/RunSettings/LogPath");
-
-            Sttings.AUT = aut.ToString();
-            Sttings.Build = buildName.ToString();
-            Sttings.TestType = testtype.ToString();
-            Sttings.IsLog = islog.ToString();
-            Sttings.IsReporting = isreport.ToString();
-            Sttings.LogPath = logpath.ToString();
+            appConnection = navigator.SelectSingleNode("EAAutoFramework/RunSettings/ApplicationDb");
+            //Set XML Details
+            Sttings.AUT = aut.Value.ToString();
+            Sttings.Build = buildName.Value.ToString();
+            Sttings.TestType = testtype.Value.ToString();
+            Sttings.IsLog = islog.Value.ToString();
+            Sttings.IsReporting = isreport.Value.ToString();
+            Sttings.LogPath = logpath.Value.ToString();
+            Sttings.AppConnectionString = appConnection.Value.ToString();
         }
     }
 }
