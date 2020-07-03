@@ -20,23 +20,23 @@ namespace EAEmployeeTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("Employee")]
+    public partial class EmployeeFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Login.feature"
+#line 1 "Employee.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "Check if the login functionality is working\r\nas expected with different permutati" +
-                    "ons and\r\ncombinations of data", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Employee", "\tResponsible for verifying Benefits, Create Employee,\r\n    Delete employee and ch" +
+                    "eck if the functionality works ", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,24 +74,16 @@ namespace EAEmployeeTest.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
-        {
-#line 6
-#line hidden
-        }
-        
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check login with correct username and password")]
+        [NUnit.Framework.DescriptionAttribute("Create Employee with all details")]
         [NUnit.Framework.CategoryAttribute("smoke")]
-        [NUnit.Framework.CategoryAttribute("positive")]
-        public virtual void CheckLoginWithCorrectUsernameAndPassword()
+        public virtual void CreateEmployeeWithAllDetails()
         {
             string[] tagsOfScenario = new string[] {
-                    "smoke",
-                    "positive"};
+                    "smoke"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check login with correct username and password", null, tagsOfScenario, argumentsOfScenario);
-#line 10
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Employee with all details", null, tagsOfScenario, argumentsOfScenario);
+#line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -111,32 +103,50 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
-#line 11
+#line 7
 testRunner.Given("I have navigated to the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 12
+#line 8
 testRunner.And("I see application opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 13
+#line 9
 testRunner.Then("I click login link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "UserName",
                             "Password"});
-                table3.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "admin",
                             "password"});
-#line 14
-testRunner.When("I enter UserName and Password", ((string)(null)), table3, "When ");
+#line 10
+testRunner.When("I enter UserName and Password", ((string)(null)), table1, "When ");
 #line hidden
-#line 17
+#line 13
 testRunner.Then("I click login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 18
-testRunner.Then("I should see the username with hello", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 14
+testRunner.And("I click employeeList link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
+testRunner.Then("I click createnew button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "Salary",
+                            "DurationWorked",
+                            "Grade",
+                            "Email"});
+                table2.AddRow(new string[] {
+                            "AutoUser",
+                            "4000",
+                            "30",
+                            "1",
+                            "autouser@ea.com"});
+#line 16
+testRunner.And("I enter following details", ((string)(null)), table2, "And ");
+#line hidden
+#line 19
+testRunner.And("I click create button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
