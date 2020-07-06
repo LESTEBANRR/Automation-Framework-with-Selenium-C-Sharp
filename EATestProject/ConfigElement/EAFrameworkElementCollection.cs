@@ -3,7 +3,7 @@
 namespace EAAutoFramework.ConfigElement
 {
     [ConfigurationCollection(typeof(EAFrameworkElement), AddItemName = "testSettings", CollectionType = ConfigurationElementCollectionType.BasicMap)]
-    class EAFrameworkElementCollection : ConfigurationElementCollection
+    public class EAFrameworkElementCollection : ConfigurationElementCollection
     {
         
         protected override ConfigurationElement CreateNewElement()
