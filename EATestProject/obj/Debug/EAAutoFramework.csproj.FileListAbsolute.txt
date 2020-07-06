@@ -84,3 +84,12 @@ C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.csproj.CopyComplete
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.dll
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\EAAutoFramework.dll.config
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Buffers.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Memory.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Buffers.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Memory.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

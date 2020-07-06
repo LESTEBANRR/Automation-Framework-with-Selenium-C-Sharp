@@ -1,22 +1,14 @@
 ﻿using EAAutoFramework.Base;
 using EAAutoFramework.Extensions;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace EAEmployeeTest.Pages
 {
     class LoginPage : BasePage
-    {
-        
-        [FindsBy(How= How.Id, Using ="UserName")]
-        IWebElement txtUserName { get; set; }
-
-        [FindsBy(How = How.Id, Using = "Password")]
-        IWebElement txtPassword { get; set; }
-
-        [FindsBy(How = How.CssSelector, Using = "input.btn")]
-        IWebElement btnLogin { get; set; }
+    {        
+        IWebElement txtUserName => DriverContext.Driver.FindElement(By.Id("UserName"));
+        IWebElement txtPassword => DriverContext.Driver.FindElement(By.Id("Password"));
+        IWebElement btnLogin => DriverContext.Driver.FindElement(By.CssSelector("input.btn"));
 
         public void Login(string userName, string password)
         {
@@ -30,9 +22,7 @@ namespace EAEmployeeTest.Pages
             return GetInstance<HomePage>();
         }
 
-        internal void CheckIfLoginExist()
-        {
-            txtUserName.AssertElementPresent();
-        }
+        internal void CheckIfLoginExist() => txtUserName.AssertElementPresent();
+        
     }
 }

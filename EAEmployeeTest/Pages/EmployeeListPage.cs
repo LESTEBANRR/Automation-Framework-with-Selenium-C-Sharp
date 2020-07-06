@@ -1,34 +1,20 @@
 ﻿using EAAutoFramework.Base;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace EAEmployeeTest.Pages
 {
     internal class EmployeeListPage : BasePage
-    {
-        [FindsBy(How = How.Name, Using = "searchTerm")]
-        IWebElement txtSearch { get; set; }
-
-        [FindsBy(How = How.LinkText, Using = "Create New")]
-        IWebElement lnkCreateNew { get; set; }
-
-        [FindsBy(How = How.ClassName, Using = "table")]
-        IWebElement tblEmployeeList { get; set; }
-
+    {       
+        IWebElement txtSearch => DriverContext.Driver.FindElement(By.Name("searchTerm"));
+        IWebElement lnkCreateNew => DriverContext.Driver.FindElement(By.LinkText("Create New"));
+        IWebElement tblEmployeeList => DriverContext.Driver.FindElement(By.ClassName("table"));
 
         public CreateEmployeePage ClickCreateNew()
         {
             lnkCreateNew.Click();
             return new CreateEmployeePage();
         }
-
-        public IWebElement GetEmployeeList()
-        {
-            return tblEmployeeList;
-        }
-
-
-
+        public IWebElement GetEmployeeList() => tblEmployeeList;
 
     }
 }

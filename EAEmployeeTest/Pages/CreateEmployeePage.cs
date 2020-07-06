@@ -1,34 +1,19 @@
 ﻿using EAAutoFramework.Base;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 using System;
 
 namespace EAEmployeeTest.Pages
 {
     class CreateEmployeePage : BasePage
     {
-        [FindsBy(How = How.Id, Using = "Name")]
-        IWebElement txtName { get; set; }
+        IWebElement txtName => DriverContext.Driver.FindElement(By.Id("Name"));
+        IWebElement txtSalary => DriverContext.Driver.FindElement(By.Id("Salary"));
+        IWebElement txtDurationWorked => DriverContext.Driver.FindElement(By.Id("DurationWorked"));
+        IWebElement txtGrade => DriverContext.Driver.FindElement(By.Id("Grade"));
+        IWebElement txtEmail => DriverContext.Driver.FindElement(By.Id("Email"));
+        IWebElement btnCreateEmployee => DriverContext.Driver.FindElement(By.XPath("//input[@value='Create']"));
 
-        [FindsBy(How = How.Id, Using = "Salary")]
-        IWebElement txtSalary { get; set; }
-
-        [FindsBy(How = How.Id, Using = "DurationWorked")]
-        IWebElement txtDurationWorked { get; set; }
-
-        [FindsBy(How = How.Id, Using = "Grade")]
-        IWebElement txtGrade { get; set; }
-
-        [FindsBy(How = How.Id, Using = "Email")]
-        IWebElement txtEmail { get; set; }
-
-        [FindsBy(How = How.XPath, Using = "//input[@value='Create']")]
-        IWebElement btnCreateEmployee { get; set; }
-
-        internal void ClickCreateButton()
-        {
-            btnCreateEmployee.Submit();
-        }
+        internal void ClickCreateButton() => btnCreateEmployee.Submit();
 
         internal void CreateEmployee(string name,string salary, string durationworked, string grade, string email)
         {
