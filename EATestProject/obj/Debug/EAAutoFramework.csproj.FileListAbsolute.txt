@@ -50,3 +50,37 @@ C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EATestProject\bin\Debug\TechTalk.SpecFlow.pdb
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EATestProject\bin\Debug\TechTalk.SpecFlow.xml
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EATestProject\bin\Debug\Utf8Json.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Config\GlobalConfig.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\EAAutoFramework.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\EAAutoFramework.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\BoDi.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Cucumber.Messages.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExcelDataReader.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Gherkin.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Google.Protobuf.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.ValueTuple.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Utf8Json.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\WebDriver.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\WebDriver.Support.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\BoDi.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExcelDataReader.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExcelDataReader.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Google.Protobuf.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Google.Protobuf.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.ValueTuple.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\TechTalk.SpecFlow.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\TechTalk.SpecFlow.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Utf8Json.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\WebDriver.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\WebDriver.Support.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.csprojAssemblyReference.cache
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.csproj.CoreCompileInputs.cache
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.csproj.CopyComplete
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\obj\Debug\EAAutoFramework.pdb

@@ -8,7 +8,8 @@
 		<TesType>SmokeTest</TesType>
 		<!--Posibleflag Y, N-->
 		<IsLog>Y</IsLog>
-		<LogPath>C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#</LogPath>
+    <LogPath >C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\</LogPath>
+    <!--LogPath>C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#</LogPath-->
 		<BuildName>DemoBuild</BuildName>
 		<!--Possible flag Y,N-->
 		<IsReport>N</IsReport>

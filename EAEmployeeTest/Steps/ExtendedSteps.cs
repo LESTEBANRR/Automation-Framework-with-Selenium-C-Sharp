@@ -4,6 +4,7 @@ using EAEmployeeTest.Pages;
 using TechTalk.SpecFlow;
 using System.Data.SqlClient;
 using EAAutoFramework.Helpers;
+using System.Threading;
 
 namespace EAEmployeeTest.Steps
 {
@@ -30,13 +31,15 @@ namespace EAEmployeeTest.Steps
             switch (button)
             {
                 case "login":
-                    CurrentPage = CurrentPage.As<LoginPage>().ClickLoginButton();
+                    CurrentPage = CurrentPage.As<LoginPage>().ClickLoginButton();                    
                     break;
                 case "createnew":
                     CurrentPage = CurrentPage.As<EmployeeListPage>().ClickCreateNew();
                     break;
                 case "create":
                     CurrentPage.As<CreateEmployeePage>().ClickCreateButton();
+                    Thread.Sleep(2000);
+                    DriverContext.Driver.Close();
                     break;
 
             }
