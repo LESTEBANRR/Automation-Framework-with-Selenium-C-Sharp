@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EAAutoFramework.Base;
+using EAAutoFramework.ConfigElement;
+using System;
 using System.IO;
 using System.Xml;
 using System.Xml.XPath;
@@ -7,6 +9,7 @@ namespace EAAutoFramework.Config
 {
     public class ConfigReader
     {
+        /*
         public static void SetFrameworkSettings()
         {
             XPathItem aut;
@@ -38,6 +41,17 @@ namespace EAAutoFramework.Config
             Sttings.IsReporting = isreport.Value.ToString();
             Sttings.LogPath = logpath.Value.ToString();
             Sttings.AppConnectionString = appConnection.Value.ToString();
+        }*/
+        public static void SetFrameworkSettings(string settingType)
+        {
+            Sttings.AUT = EaTestConfiguration.EASettings.TestSettings[settingType].AUT;
+            //Sttings.Build = buildName.Value.ToString();
+            Sttings.TestType = EaTestConfiguration.EASettings.TestSettings[settingType].TesType;
+            Sttings.IsLog = EaTestConfiguration.EASettings.TestSettings[settingType].IsLog;
+           // Sttings.IsReporting = isreport.Value.ToString();
+            Sttings.LogPath = EaTestConfiguration.EASettings.TestSettings[settingType].LogPath;
+            //Sttings.AppConnectionString = appConnection.Value.ToString();
+            Sttings.BrowserType=(BrowserType)Enum.Parse(typeof(BrowserType), EaTestConfiguration.EASettings.TestSettings[settingType].Browser);
         }
     }
 }

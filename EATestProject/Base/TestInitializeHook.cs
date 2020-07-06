@@ -17,7 +17,7 @@ namespace EAAutoFramework.Base
         public void InitializeSettings()
         {
             //Set all the settings for framework
-            ConfigReader.SetFrameworkSettings();
+            ConfigReader.SetFrameworkSettings("staging");
             //Set Log
             LogHelpers.CreateLogFile();
             //Open Browser

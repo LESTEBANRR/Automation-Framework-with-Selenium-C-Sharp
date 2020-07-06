@@ -133,7 +133,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HookInitialize.cs" />
+    <Compile Include="Hooks\HookInitialize.cs" />
     <Compile Include="Pages\CreateEmployeePage.cs" />
     <Compile Include="Pages\EmployeeListPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
