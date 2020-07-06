@@ -123,6 +123,9 @@
     <Compile Include="Base\Browser.cs" />
     <Compile Include="Base\DriverContext.cs" />
     <Compile Include="Base\TestInitializeHook.cs" />
+    <Compile Include="ConfigElement\EAFrameworkElement.cs" />
+    <Compile Include="ConfigElement\EAFrameworkElementCollection.cs" />
+    <Compile Include="ConfigElement\EaTestConfiguration.cs" />
     <Compile Include="Config\ConfigReader.cs" />
     <Compile Include="Config\Sttings.cs" />
     <Compile Include="Extensions\WebDriverExtensions.cs" />
@@ -143,6 +146,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
