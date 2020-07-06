@@ -9,7 +9,7 @@ namespace EAAutoFramework.Config
 {
     public class ConfigReader
     {
-        /*
+        
         public static void SetFrameworkSettings()
         {
             XPathItem aut;
@@ -41,7 +41,8 @@ namespace EAAutoFramework.Config
             Sttings.IsReporting = isreport.Value.ToString();
             Sttings.LogPath = logpath.Value.ToString();
             Sttings.AppConnectionString = appConnection.Value.ToString();
-        }*/
+        }
+        
         public static void SetFrameworkSettings(string settingType)
         {
             Sttings.AUT = EaTestConfiguration.EASettings.TestSettings[settingType].AUT;

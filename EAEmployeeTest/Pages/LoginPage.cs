@@ -1,12 +1,14 @@
 ﻿using EAAutoFramework.Base;
 using EAAutoFramework.Extensions;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.PageObjects;
 
 namespace EAEmployeeTest.Pages
 {
     class LoginPage : BasePage
     {
+        
         [FindsBy(How= How.Id, Using ="UserName")]
         IWebElement txtUserName { get; set; }
 
@@ -15,7 +17,6 @@ namespace EAEmployeeTest.Pages
 
         [FindsBy(How = How.CssSelector, Using = "input.btn")]
         IWebElement btnLogin { get; set; }
-
 
         public void Login(string userName, string password)
         {
