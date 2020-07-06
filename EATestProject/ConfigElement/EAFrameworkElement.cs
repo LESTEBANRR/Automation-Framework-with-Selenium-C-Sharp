@@ -9,23 +9,26 @@ namespace EAAutoFramework.ConfigElement
 {
     public class EAFrameworkElement : ConfigurationElement
     {
-        [ConfigurationProperty("name",IsRequired =true)]
-        public string Name {get{return (string)base["name"];}}
+        [ConfigurationProperty("name", IsRequired = true)]
+        public string Name => (string)base["name"];
 
-        [ConfigurationProperty("aut", IsRequired =true) ]
-        public string AUT { get { return (string)base["aut"]; } }
+        [ConfigurationProperty("aut", IsRequired = true)]
+        public string AUT => (string)base["aut"];
 
         [ConfigurationProperty("browser", IsRequired = true)]
-        public string Browser { get { return (string)base["browser"]; } }
+        public string Browser => (string)base["browser"];
 
         [ConfigurationProperty("testType", IsRequired = true)]
-        public string TesType { get { return (string)base["testType"]; } }
+        public string TesType => (string)base["testType"];
 
         [ConfigurationProperty("isLog", IsRequired = true)]
-        public string IsLog { get { return (string)base["IsLog"]; } }
+        public string IsLog => (string)base["IsLog"];
 
         [ConfigurationProperty("logPath", IsRequired = true)]
-        public string LogPath { get { return (string)base["logPath"]; } }
+        public string LogPath => (string)base["logPath"];
+
+        [ConfigurationProperty("autConnectionString", IsRequired = true)]
+        public string AUTDBConnectionString => (string)base["autConnectionString"];
 
     }
 }

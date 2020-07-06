@@ -5,23 +5,11 @@ namespace EAAutoFramework.ConfigElement
     [ConfigurationCollection(typeof(EAFrameworkElement), AddItemName = "testSettings", CollectionType = ConfigurationElementCollectionType.BasicMap)]
     public class EAFrameworkElementCollection : ConfigurationElementCollection
     {
-        
-        protected override ConfigurationElement CreateNewElement()
-        {
-            return new EAFrameworkElement();
-        }
 
-        protected override object GetElementKey(ConfigurationElement element)
-        {
-            return (element as EAFrameworkElement).Name;
-        }
+        protected override ConfigurationElement CreateNewElement() => new EAFrameworkElement();
 
-        public new EAFrameworkElement this[string type]
-        {
-            get
-            {
-                return (EAFrameworkElement)base.BaseGet(type);
-            }
-        }
+        protected override object GetElementKey(ConfigurationElement element) => (element as EAFrameworkElement).Name;
+
+        public new EAFrameworkElement this[string type] => (EAFrameworkElement)base.BaseGet(type);
     }
 }
