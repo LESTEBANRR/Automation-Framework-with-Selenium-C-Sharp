@@ -1,22 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 
 namespace EAAutoFramework.ConfigElement
 {
+    [ConfigurationCollection(typeof(EAFrameworkElement), AddItemName = "testSettings", CollectionType = ConfigurationElementCollectionType.BasicMap)]
     class EAFrameworkElementCollection : ConfigurationElementCollection
     {
+        
         protected override ConfigurationElement CreateNewElement()
         {
-            throw new NotImplementedException();
+            return new EAFrameworkElement();
         }
 
         protected override object GetElementKey(ConfigurationElement element)
         {
-            throw new NotImplementedException();
+            return (element as EAFrameworkElement).Name;
+        }
+
+        public new EAFrameworkElement this[string type]
+        {
+            get
+            {
+                return (EAFrameworkElement)base.BaseGet(type);
+            }
         }
     }
 }
