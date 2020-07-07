@@ -1,7 +1,11 @@
-﻿<--------------HOOK.cs--------------------->
+﻿To Use Klov you need install MongoDB
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+<--------------HOOK.cs--------------------->
 private static ExtentTest featureName;
 private static ExtentTest scenario;
 private static ExtentReports extent;
+private static Klovreporter klov;
 
 [BeforeTestRun] 
 public static void InitializaReport()
@@ -9,6 +13,13 @@ public static void InitializaReport()
 var htmlReporter=new ExtentHtmlReporter("URL a guardar el reporte");
 htmlReporter.Configuration.Theme = AventStack.ExtendReports.Reporter.Configuration.Theme.Dark; // Poner el tema oscuro
 extent = new ExtentReports();
+
+klov = new KlovReporter();
+klov.InitMongoDbConnection("localhost",27017);
+klov.ProjectName="ExecuteAutomation Test";
+klov.klovUrl="http://localhost:5689"; // url of the klov server
+klov.ReportName = "Esteban "+DateTime.Now.ToString();
+
 extent.AttachReporter(htmlReporter);
 }
 
