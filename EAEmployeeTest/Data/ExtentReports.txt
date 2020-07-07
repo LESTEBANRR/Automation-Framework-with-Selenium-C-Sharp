@@ -1,0 +1,14 @@
+﻿var htmlReporter=new ExtentHtmlReporter("URL a guardar el reporte");
+htmlReporter.Configuration.Theme = AventStack.ExtendReports.Reporter.Configuration.Theme.Dark; // Poner el tema oscuro
+var extent = new ExtentReports();
+extent.AttachReporter(htmlReporter);
+
+//Feature
+var feature= extent.CreateTest<Feature>("Name of the feature");
+//Scenario
+var scenario= feature.CreateNode<Scenario>("Name of the scenario");
+//Steps
+scenario.CreateNode<Given>("NAme of Step");
+				   <Then>
+				   <When>
+				   <And>

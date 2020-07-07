@@ -2,7 +2,6 @@
 using EAAutoFramework.Config;
 using EAEmployeeTest.Pages;
 using TechTalk.SpecFlow;
-using System.Data.SqlClient;
 using EAAutoFramework.Helpers;
 using System.Threading;
 

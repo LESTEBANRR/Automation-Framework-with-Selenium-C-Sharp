@@ -25,7 +25,6 @@ namespace EAEmployeeTest
             var stepName = ScenarioContext.Current.StepContext.StepInfo.Text;
             var featureName = FeatureContext.Current.FeatureInfo.Title;
             var scenarioName = ScenarioContext.Current.ScenarioInfo.Title;
-
         }
     }
 }
