@@ -50,7 +50,6 @@ C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EATestProject\bin\Debug\TechTalk.SpecFlow.pdb
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EATestProject\bin\Debug\TechTalk.SpecFlow.xml
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EATestProject\bin\Debug\Utf8Json.xml
-C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Config\GlobalConfig.xml
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\EAAutoFramework.dll
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\EAAutoFramework.pdb
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\BoDi.dll
@@ -93,3 +92,19 @@ C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Memory.xml
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\DnsClient.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\ExtentReports.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\MongoDB.Bson.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\MongoDB.Driver.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\RazorEngine.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Web.Razor.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\DnsClient.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\MongoDB.Bson.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\MongoDB.Driver.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\RazorEngine.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EATestProject\bin\Debug\System.Web.Razor.xml

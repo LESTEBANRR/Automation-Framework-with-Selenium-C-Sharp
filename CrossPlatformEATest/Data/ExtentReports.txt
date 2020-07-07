@@ -1,0 +1,119 @@
+﻿To Use Klov you need install MongoDB
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+<--------------HOOK.cs--------------------->
+private static ExtentTest featureName;
+private static ExtentTest scenario;
+private static ExtentReports extent;
+private static Klovreporter klov;
+
+[BeforeTestRun] 
+public static void InitializaReport()
+{
+var htmlReporter=new ExtentHtmlReporter("URL a guardar el reporte");
+htmlReporter.Configuration.Theme = AventStack.ExtendReports.Reporter.Configuration.Theme.Dark; // Poner el tema oscuro
+extent = new ExtentReports();
+
+klov = new KlovReporter();
+klov.InitMongoDbConnection("localhost",27017);
+klov.ProjectName="ExecuteAutomation Test";
+klov.klovUrl="http://localhost:5689"; // url of the klov server
+klov.ReportName = "Esteban "+DateTime.Now.ToString();
+
+extent.AttachReporter(htmlReporter);
+}
+
+[AfterTestRun]
+public static void TearDownReport()
+{
+	extent.Flush(); // Generar el Reporte
+}
+
+[BeforeScenario]
+public static void BeforeFeature() 
+{
+	featureName= extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);	
+}
+
+[BeforeScenario]
+public void Initialize()
+{
+	scenario=featureName.CreateNode<Scenario>(ScenarioCOntext.Current.ScenarioInfo.Title);
+}
+
+[AfterStep]
+public void InsertReportingSteps()
+{
+	var stepType= ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+
+	PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("TestStatus",BindingFlags.Instance | BindingFlags.NonPublic);
+	MethodInfo getter = pInfo,GetGetMethod(nonPublic : true);
+	object TestResult = getter.Invoke(ScenarioContext.Current, null);
+
+	if(ScenarioContext.Current.TestError == null){
+	switch(stepType)
+	{
+	case "Given":
+	scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	case "When":
+	scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	case "Then":
+	scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	case "And":
+	scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	}
+	}else{
+	switch(stepType)
+	{
+	case "Given":
+	scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.InnerException);
+	break;
+	case "When":
+	scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.InnerException);
+	break;
+	case "Then":
+	scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.Message);
+	break;
+	case "And":
+	scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.InnerException);
+	break;
+	}
+	
+	//Pending Status
+	if(TestResult.ToString()=="StepDefinitionPending"){
+	
+	switch(stepType)
+	{
+	case "Given":
+	scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	case "When":
+	scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	case "Then":
+	scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	case "And":
+	scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	
+	}
+	
+}
+
+
+
+
+//Feature
+var feature= extent.CreateTest<Feature>("Name of the feature");
+//Scenario
+var scenario= feature.CreateNode<Scenario>("Name of the scenario");
+//Steps
+scenario.CreateNode<Given>("NAme of Step");
+				   <Then>
+				   <When>
+				   <And>

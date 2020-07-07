@@ -82,7 +82,6 @@ C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C
 C:\Users\Azul\Documents\L_E\.Net\Automation Framework Develpment with Selenium C#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\Data\Login.xlsx
-C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\Config\GlobalConfig.xml
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
@@ -136,3 +135,20 @@ C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\obj\Debug
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\obj\Debug\EAEmployeeTest.csproj.CopyComplete
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\obj\Debug\EAEmployeeTest.dll
 C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\obj\Debug\EAEmployeeTest.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\DnsClient.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\ExtentReports.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\MongoDB.Bson.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\MongoDB.Driver.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\RazorEngine.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\System.Buffers.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\System.Web.Razor.dll
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\DnsClient.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\MongoDB.Bson.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\MongoDB.Driver.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\RazorEngine.xml
+C:\Users\L ESTEBAN\Documents\WORK\Courses Projects\AFC#\EAEmployeeTest\bin\Debug\System.Web.Razor.xml

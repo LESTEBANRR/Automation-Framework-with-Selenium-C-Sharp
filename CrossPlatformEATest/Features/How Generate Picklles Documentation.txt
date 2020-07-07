@@ -1,0 +1,1 @@
+Pickle-Features -FeatureDirectory ..\EAEmployeeTest\Features -OutputDirectory ..\EAEmployeeTest\Features\Documentation -SystemUnderTestName "EmployeeAppTest" -SystemUnderTestVersion "1.0" -DocumentationFormat dhtml
