@@ -31,9 +31,67 @@ public void Initialize()
 }
 
 [AfterStep]
-public void InsertReprtingSteps()
+public void InsertReportingSteps()
 {
+	var stepType= ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+
+	PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("TestStatus",BindingFlags.Instance | BindingFlags.NonPublic);
+	MethodInfo getter = pInfo,GetGetMethod(nonPublic : true);
+	object TestResult = getter.Invoke(ScenarioContext.Current, null);
+
+	if(ScenarioContext.Current.TestError == null){
+	switch(stepType)
+	{
+	case "Given":
 	scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	case "When":
+	scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	case "Then":
+	scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	case "And":
+	scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+	break;
+	}
+	}else{
+	switch(stepType)
+	{
+	case "Given":
+	scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.InnerException);
+	break;
+	case "When":
+	scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.InnerException);
+	break;
+	case "Then":
+	scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.Message);
+	break;
+	case "And":
+	scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContextCurrent.TestError.InnerException);
+	break;
+	}
+	
+	//Pending Status
+	if(TestResult.ToString()=="StepDefinitionPending"){
+	
+	switch(stepType)
+	{
+	case "Given":
+	scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	case "When":
+	scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	case "Then":
+	scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	case "And":
+	scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+	break;
+	
+	}
+	
 }
 
 
